@@ -1,7 +1,7 @@
 ---
 ---
 layout: post
-title:  "Project 2: Advance Locomotion Learning "
+title:  "Project 2: Inprogress "
 date:   2025-03-08 22:20:59 +00:00
 image: /images/newimage.png
 categories: research

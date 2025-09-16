@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PROJECT INPROCESS"
+title:  "Project 1: Inprogress"
 date:  2025-09-16
 image: /images/stones.jpg
 categories: research
