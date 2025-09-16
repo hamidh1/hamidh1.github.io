@@ -2,7 +2,7 @@
 layout: post
 title:  "Project 3: Inprogress "
 date:   2025-03-08 22:20:59 +00:00
-image: /images/image1.png
+image: /images/image3.png
 categories: research
 author: "Hamid Hussain"
 authors: "<strong>Hamid Hussain</strong>, Wilayat Ali"
