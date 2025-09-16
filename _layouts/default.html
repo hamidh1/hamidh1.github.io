@@ -22,31 +22,34 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
+  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
     <tr>
       <td>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
+        <!-- Intro Section -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;">
           <tr>
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h1>Hamid Hussain</h1>
 
-              <p>I am a PhD student in Robotics at the 
+              <p>
+                I am a PhD student at the 
                 <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, 
-                focusing on <b>legged robot locomotion</b> and 
-                <b>risk-aware reinforcement learning</b>.
+                in the <b>Robotics Institute</b> at the 
+                <b>School of Information Science and Technology</b>. 
+                I work on <b>locomotion learning of quadruped robots</b>. 
+                My PhD advisor is <a href="#">Prof. Kan Zhen</a>.
               </p>
 
               <p>
-                I received my Master's degree from 
-                <a href="http://en.hit.edu.cn/">Harbin Institute of Technology</a>, China. 
-                My research involves developing deep reinforcement learning controllers 
-                for quadruped robots using Isaacgym.
+                I hold an MS in <b>Control Science and Engineering</b> from 
+                <a href="http://en.hit.edu.cn/">Harbin Institute of Technology</a>, China, 
+                and a BS in <b>Electronic Engineering</b> from 
+                <a href="https://iqra.edu.pk/">Iqra University</a>, Karachi, Pakistan.
               </p>
 
               <p style="text-align:center">
-                <a href="mailto:engrhamid110@gmail.com">Email</a> &nbsp;/&nbsp;
+                <a href="mailto:engrahamid110@gmail.com">Email</a> &nbsp;/&nbsp;
                 <a href="https://github.com/hamidh1">GitHub</a> &nbsp;/&nbsp;
-<!--                 <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a> &nbsp;/&nbsp; -->
                 <a href="https://www.linkedin.com/in/hamidmirza333">LinkedIn</a>
               </p>
             </td>
@@ -63,14 +66,18 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                My research interests include legged robot locomotion, risk-aware reinforcement learning, 
-                deep reinforcement learning, and control systems.
+                My research interests include 
+                <b>legged robot locomotion</b>, 
+                <b>risk-aware reinforcement learning</b>, 
+                <b>deep reinforcement learning</b>, and 
+                <b>control systems</b>.  
+                I aim to build safe, agile, and intelligent quadruped robots that can traverse diverse and challenging terrains.
               </p>
             </td>
           </tr>
         </table>
 
-        <!-- Projects Loop -->
+        <!-- Projects / Publications Loop -->
         <table style="width:100%;margin:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
@@ -96,6 +103,7 @@
           {% endfor %}
         </table>
 
+        <!-- Footer -->
         <br><br>
         <table style="width:100%;margin:auto;">
           <tr>
