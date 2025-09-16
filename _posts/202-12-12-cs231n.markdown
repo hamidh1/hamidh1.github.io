@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Project2: Advance Locomotion Learning "
+date:   2025-03-08 22:20:59 +00:00
+image: /images/newimage.png
+categories: research
+author: "Hamid Hussain"
+Website: "xxx"
+venue: "arxiv"
+
+paper: /pdfs/new.pdf
+---
+
+Updated description of your project goes here. Add new results, methods, or links as needed.
