@@ -2,7 +2,7 @@
 layout: post
 title:  "Project 1: Inprogress"
 date:  2025-09-16
-image: /images/stones.jpg
+image: /images/image1.png
 categories: research
 author: "Hamid Hussain"
 authors: "<strong>Hamid Hussain</strong>, Wilayat Ali"
