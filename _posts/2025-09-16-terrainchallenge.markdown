@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TerrainChallenge: Locomotion learning of Quadruped Robot using RL"
+title:  "PROJECT INPROCESS"
 date:  2025-09-16
 image: /images/stones.jpg
 categories: research
