@@ -1,19 +1,14 @@
 ---
 layout: post
-title:  "CNNs for 3D Model Classification"
-date:   2016-03-08 22:20:59 +00:00
-image: /images/cs231n.png
+title:  "Project2: Locomotion Learning Update"
+date:   2025-03-08 22:20:59 +00:00
+image: /images/newimage.png
 categories: Stanford
-author: "Leo Keselman"
-subtitle: "Learning Projections"
+author: "Hamid Hussain"
+subtitle: "Advanced Locomotion Learning"
 course: "CS231n: Convolutional Neural Networks for Visual Recognition" 
 poster: /pdfs/cs231n-poster.pdf
 paper: /pdfs/cs231n.pdf
 ---
 
-3D shape classification by learning an embedding function into a 2D image and using a pre-trained ImageNet network. At the time, got state-of-the-art results for single-view classification on ShapeNet40. 
-
-
-[CS231N Paper](/pdfs/cs231n.pdf){:target="_blank"}
-
-[CS231N Poster](/pdfs/cs231n-poster.pdf){:target="_blank"}
+Updated description of your project goes here. Add new results, methods, or links as needed.
