@@ -73,7 +73,16 @@ h1 {
   margin-right: 0px;
 
 }
-
+// Add this below h1 styles
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: block;
+  margin: 0 auto;
+}
 .one {
   width: 160px;
   height: 160px;
