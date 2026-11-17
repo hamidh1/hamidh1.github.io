@@ -1,0 +1,6 @@
+{% assign publication = include.publication %}
+<article class="publication-entry">
+  {% if publication.year %}<span class="publication-year">{{ publication.year | escape }}</span>{% endif %}
+  <div class="publication-info"><h3>{% if publication.url %}<a href="{{ publication.url | escape }}">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</h3><p class="publication-authors">{{ publication.authors | escape }}</p><p class="publication-venue">{{ publication.venue | escape }}</p></div>
+  <div class="publication-links">{% if publication.pdf %}<a href="{{ publication.pdf | relative_url }}">{% include icon.html name="paper" %}PDF</a>{% endif %}{% if publication.code %}<a href="{{ publication.code | escape }}">{% include icon.html name="code" %}Code</a>{% endif %}{% if publication.url %}<a href="{{ publication.url | escape }}">{% include icon.html name="external" %}Project</a>{% endif %}</div>
+</article>

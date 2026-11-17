@@ -1,0 +1,12 @@
+<header class="site-header wrapper">
+  <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.name | escape }}</a>
+  <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="true" hidden>Menu <span aria-hidden="true">☰</span></button>
+  <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+    {% for item in site.data.navigation %}
+    {% assign is_active = false %}
+    {% if page.url == item.url %}{% assign is_active = true %}{% endif %}
+    {% if item.url == '/projects/' and page.collection == 'projects' %}{% assign is_active = true %}{% endif %}
+    <a href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>

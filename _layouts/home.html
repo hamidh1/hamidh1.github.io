@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="hero" aria-labelledby="intro-title">
+  <div class="hero-copy">
+    <h1 id="intro-title">{{ site.name | escape }}</h1>
+    <p class="hero-role">Robotics Researcher</p>
+    <div class="hero-description">{{ content }}</div>
+    <div class="profile-links" aria-label="Contact and academic profiles">
+      <a class="email-link" href="mailto:{{ site.footer-links.email }}">{% include icon.html name="email" %}<span>{{ site.footer-links.email }}</span></a>
+      {% if site.scholar_url %}<a href="{{ site.scholar_url | escape }}">{% include icon.html name="scholar" %}<span>Google Scholar</span></a>{% endif %}
+      <a href="https://github.com/{{ site.footer-links.github }}">{% include icon.html name="github" %}<span>GitHub</span></a>
+      <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">{% include icon.html name="linkedin" %}<span>LinkedIn</span></a>
+    </div>
+    <div class="topic-tags" aria-label="Research interests"><span>Quadruped Robotics</span><span>Reinforcement Learning</span><span>Intelligent Control</span><span>Autonomous Systems</span></div>
+  </div>
+  <figure class="hero-photo">
+    <img src="{{ '/assets/images/quadruped-lab.png' | relative_url }}" alt="Illustrative quadruped research robot stepping across concrete blocks in a laboratory" width="1536" height="1024" fetchpriority="high">
+    <figcaption>Illustrative robotics imagery</figcaption>
+  </figure>
+</section>
+<section class="section" aria-labelledby="projects-title">
+  <div class="section-heading"><h2 id="projects-title">Research Highlights</h2><a class="section-link" href="{{ '/projects/' | relative_url }}">View All Projects <span aria-hidden="true">→</span></a></div>
+  {% include project-list.html %}
+</section>
+<section class="section publications-section" aria-labelledby="publications-title">
+  <div class="section-heading"><h2 id="publications-title">Selected Publications</h2><a class="section-link" href="{{ '/publications/' | relative_url }}">View All Publications <span aria-hidden="true">→</span></a></div>
+  {% assign publications = site.data.publications | sort: 'year' | reverse %}
+  {% for publication in publications limit: 3 %}
+    {% include publication.html publication=publication %}
+  {% else %}
+    <div class="publications-empty"><span class="empty-icon" aria-hidden="true">{% include icon.html name="paper" %}</span><div><h3>Publication updates coming soon</h3><p>Confirmed papers and research outputs will appear here.</p></div><a class="text-link" href="{{ '/research/' | relative_url }}">Explore research <span aria-hidden="true">→</span></a></div>
+  {% endfor %}
+</section>
+<div class="home-bottom"><p>Interested in robotics and learning-based control?</p><a class="text-link" href="mailto:{{ site.footer-links.email }}">Let’s connect <span aria-hidden="true">→</span></a></div>

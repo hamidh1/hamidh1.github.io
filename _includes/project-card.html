@@ -1,0 +1,9 @@
+{% assign project = include.project %}
+<article class="project-card">
+  <a class="project-image-link" href="{{ project.url | relative_url }}" aria-label="Read about {{ project.title | escape }}"><img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: '' | escape }}" width="640" height="360" loading="lazy"></a>
+  <div class="project-card-content">
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
+    <p>{{ project.description | escape }}</p>
+    <div class="project-card-bottom"><div class="topic-tags"><span>Placeholder</span><span>Illustrative image</span></div><a class="card-arrow" href="{{ project.url | relative_url }}" aria-label="View {{ project.title | escape }}"><span aria-hidden="true">→</span></a></div>
+  </div>
+</article>
