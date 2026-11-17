@@ -5,3 +5,8 @@
 
 @media (min-width:541px) and (max-width:760px) { .project-crop { height:135px; } }
 @media (max-width:540px) { .project-crop { height:185px; } }
+
+/* Preserve portrait project photos at their natural proportions on all screens. */
+.project-card--portrait { width:min(100%, 300px); justify-self:center; align-self:start; }
+.project-card--portrait img { height:auto; object-fit:contain; }
+.project-card--portrait:hover img { transform:none; }
