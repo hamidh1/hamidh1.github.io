@@ -7,7 +7,7 @@ layout: default
     <p class="hero-role">Robotics Researcher</p>
     <div class="hero-description">{{ content }}</div>
     <div class="profile-links" aria-label="Contact and academic profiles">
-      <a class="email-link" href="mailto:{{ site.footer-links.email }}">{% include icon.html name="email" %}<span>{{ site.footer-links.email }}</span></a>
+      <a class="email-link" href="mailto:{{ site.footer-links.email }}" aria-label="Send Hamid Hussain an email" title="Send email">{% include icon.html name="email" %}</a>
       {% if site.scholar_url %}<a href="{{ site.scholar_url | escape }}">{% include icon.html name="scholar" %}<span>Google Scholar</span></a>{% endif %}
       <a href="https://github.com/{{ site.footer-links.github }}">{% include icon.html name="github" %}<span>GitHub</span></a>
       <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">{% include icon.html name="linkedin" %}<span>LinkedIn</span></a>
