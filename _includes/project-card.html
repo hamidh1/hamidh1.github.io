@@ -1,6 +1,6 @@
 {% assign project = include.project %}
 <article class="project-card">
-  <a class="project-image-link" href="{{ project.url | relative_url }}" aria-label="Read about {{ project.title | escape }}"><img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: '' | escape }}" width="640" height="360" loading="lazy" style="object-position: {{ project.image_position | default: '50% 50%' }}"></a>
+  <a class="project-image-link" href="{{ project.url | relative_url }}" aria-label="Read about {{ project.title | escape }}">{% if project.image_viewbox %}<svg class="project-crop" viewBox="{{ project.image_viewbox }}" preserveAspectRatio="xMidYMid slice" role="img" aria-label="{{ project.image_alt | escape }}"><image href="{{ project.image | relative_url }}" width="3840" height="2160"/></svg>{% else %}<img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: '' | escape }}" width="640" height="360" loading="lazy" style="object-position: {{ project.image_position | default: '50% 50%' }}">{% endif %}</a>
   <div class="project-card-content">
     <h3><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
     <p>{{ project.description | escape }}</p>

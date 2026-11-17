@@ -7,8 +7,8 @@ layout: default
     <h1>{{ page.title | escape }}</h1>
     <p>{{ page.description | escape }}</p>
   </header>
-  {% if page.image %}<img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}" width="640" height="400">{% endif %}
-  {% if page.image_credit %}<p class="image-credit">Photo: <a href="{{ page.image_source | escape }}">{{ page.image_credit | escape }}</a> · <a href="{{ page.image_license_url | escape }}">{{ page.image_license | escape }}</a></p>{% endif %}
+  {% if page.image_viewbox %}<svg class="project-detail-image project-detail-crop" viewBox="{{ page.image_viewbox }}" role="img" aria-label="{{ page.image_alt | escape }}"><image href="{{ page.image | relative_url }}" width="3840" height="2160"/></svg>{% elsif page.image %}<img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}" width="640" height="400">{% endif %}
+  {% if page.image_credit %}<p class="image-credit">Photo: <a href="{{ page.image_source | escape }}">{{ page.image_credit | escape }}</a> · <a href="{{ page.image_license_url | escape }}">{{ page.image_license | escape }}</a>{% if page.image_viewbox %} · displayed cropped{% endif %}</p>{% endif %}
   <div class="project-body">{{ content }}</div>
   <a class="text-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
 </article>
