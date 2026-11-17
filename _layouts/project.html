@@ -8,6 +8,7 @@ layout: default
     <p>{{ page.description | escape }}</p>
   </header>
   {% if page.image %}<img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' | escape }}" width="640" height="400">{% endif %}
+  {% if page.image_credit %}<p class="image-credit">Photo: <a href="{{ page.image_source | escape }}">{{ page.image_credit | escape }}</a> · <a href="{{ page.image_license_url | escape }}">{{ page.image_license | escape }}</a></p>{% endif %}
   <div class="project-body">{{ content }}</div>
   <a class="text-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
 </article>
